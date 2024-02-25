@@ -32,7 +32,7 @@ a {
     /* 盒子居中（不脱离文档流） */
     margin: 0 auto;
     /* 设置宽高 */
-    width: 1000px;
+    width: 100%;
     /* 设置圆角 */
     border-radius: 35px;
     /* 垂直居中（不脱离文档流） */
@@ -45,5 +45,19 @@ a {
     box-shadow: 4px 4px 10px rgba(122, 206, 26, 0.253);
     /* 设置背景色 */
     background-color: rgba(146, 240, 5, 0.086);
-    /* 设置圆角 */
+}
+
+#SDSystem-Mortal {
+    /* 设置阴影 */
+    box-shadow: 4px 4px 10px rgba(167, 22, 15, 0.848);
+    /* 设置背景色 */
+    background-color: rgba(255, 42, 0, 0.207);
+}
+
+.SDSystem-Mortal-Image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(224, 21, 21);
+    display:inline-block;
 }
