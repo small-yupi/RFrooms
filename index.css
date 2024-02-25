@@ -1,0 +1,167 @@
+
+/* M.E.G Image 样式 */
+#MEGImage {
+    /* 设置动画 */
+    animation: loading 0.5s ease-in forwards;
+    /* 图片居中（脱离文档流） */
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+} @keyframes loading {
+    0% {
+        transform: scale(500%);
+    }
+
+    90% {
+        transform: scale(10%);
+    }
+
+    100% {
+        transform: scale(0%);
+    }
+}
+
+/* 界面标题统一样式 */
+.title {
+    animation: titleDisplay 0.5s ease 0.5s forwards;
+    /* 0%大小 */
+    transform: scale(0%);
+    /* 文字居中 */
+    text-align: center;
+    /* 设置阴影 */
+    text-shadow: 5px 5px 20px rgba(148, 151, 151, 0.485);
+} @keyframes titleDisplay {
+    0% {
+        transform: scale(0%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+hr {
+    animation: lineDisplay 0.5s ease 0.5s forwards;
+    /* 设置不透明度 */
+    opacity: 0.1;
+    /* 0%大小 */
+    transform: scale(0%);
+    /* 阴影设置 */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.175);
+} @keyframes lineDisplay {
+    0% {
+        transform: scale(0%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+/* 主按钮默认样式 */
+.MainButton {
+    animation: mainButtonDisplay 0.5s ease 0.5s forwards;
+    /* 0%大小 */
+    transform: scale(0%);
+    /* 所有元素在0.25秒使用贝塞尔曲线(ease)进行变换 */
+    transition: all 0.25s ease;
+    /* 白色背景色 */
+    background-color: white;
+    /* 10px圆角 */
+    border-radius: 10px;
+    /* 无边框 */
+    border: none;
+    /* 长、宽设置 */
+    width: 200px;
+    height: 50px;
+    /* 文字居中 */
+    text-align: center;
+    /* 阴影设置 */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.204), 
+                -2px -2px 18px rgba(233, 233, 233, 0.537);
+    /* 间距设置 */
+    margin: 1.4%;
+} @keyframes mainButtonDisplay {
+    0% {
+        transform: scale(0%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+/* 主按钮鼠标悬停样式 */
+.MainButton:hover {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 25px rgba(56, 56, 56, 0.148), 
+                -2px -2px 15px rgba(233, 233, 233, 0.537);
+    scale: 110%;
+}
+
+/* 鼠标悬停后的样式*/
+.MainButton:hover::after {
+    content: '>';
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 25px rgba(56, 56, 56, 0.148), 
+                -2px -2px 15px rgba(233, 233, 233, 0.537);
+    scale: 110%;
+}
+
+/* 主按钮点击样式 */
+.MainButton:active {
+    /* 动画效果 */
+    transition: all 0.01s ease-in;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-shadow: inset 5px 5px 12px rgba(35, 35, 35, 0.33), 
+                inset -2px -2px 15px rgba(245, 245, 245, 0.537);
+    scale: 98%;
+}
+
+.MainBox {
+    /* 设置动画 */
+    animation: mainBoxDisplay 0.5s ease 0.5s forwards;
+    /* 文字居中 */
+    text-align: center;
+    /* 盒子居中（不脱离文档流） */
+	margin: 0 auto;
+    /* 设置宽 */
+    width: 900px;
+    /* 尺寸为0px */
+    transform: scale(0%);
+    /* 文字阴影 */
+    text-shadow: 3px 3px 2px rgba(227, 227, 227, 0.6)
+} @keyframes mainBoxDisplay{
+    0% {
+        transform: scale(0%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+a {
+    /* 超链接无下划线 */
+    text-decoration: none;
+    /* 颜色黑 */
+    color: rgb(0, 0, 0);
+}

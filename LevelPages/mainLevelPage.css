@@ -1,0 +1,76 @@
+/* 设置主盒子样式 */
+#mainBox {
+    /* 盒子居中（不脱离文档流） */
+	margin: 0 auto;
+    /* 使用width使该盒子宽度为81% */
+    width: 71%;
+    /* 使用text-align使该盒子内的文字居中 */
+    text-align: center;
+}
+
+/* 设置class为"elseLevelList"超链接样式 */
+.elseLevelListLink {
+    /* 所有元素在0.4秒内使用贝塞尔曲线进行变换 */
+    transition: all 0.2s ease;
+    /* 设置超链接无下划线 */
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.705);
+    /* 设置文字大小及粗细 */
+    font-size: 20px;
+    font-weight: bold;
+    /* 设置多个超链接之间的间距 */
+    margin: 20px;
+    /* 设置文字阴影 */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.138);
+}
+
+/* 设置class为"elseLevelList"超链接悬停样式 */
+.elseLevelListLink:hover {
+    /* 设置超链接无下划线 */
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.705);
+    /* 设置文字大小及粗细 */
+    font-size: 23px;
+    font-weight: bold;
+    /* 设置多个超链接之间的间距 */
+    margin: 20px;
+    /* 设置文字阴影 */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.067);
+}
+
+/* 设置class为"elseLevelList"超链接按下样式 */
+.elseLevelListLink:active {
+    /* 所有元素在0.05秒内使用贝塞尔曲线进行变换 */
+    transition: all 0.05s ease-in;
+    /* 设置超链接无下划线 */
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.705);
+    /* 设置文字大小及粗细 */
+    font-size: 19px;
+    font-weight: bold;
+    /* 设置多个超链接之间的间距 */
+    margin: 20px;
+    /* 设置文字阴影 */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.152);
+}
+
+#listBox {
+    /* 文字居中 */
+    text-align: center;
+    /* 盒子居中（不脱离文档流） */
+	margin: 0 auto;
+    /*  */
+    
+}
+
+a {
+    /* 超链接无下划线 */
+    text-decoration: none; 
+    color: rgb(230, 23, 68)
+}
+
+a:hover {
+    /* 超链接无下划线 */
+    text-decoration: underline rgb(218, 23, 69);
+    color: rgb(218, 23, 69);
+}

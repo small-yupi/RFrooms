@@ -1,0 +1,49 @@
+.levelDocument {
+    width: 70%;
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+a {
+    /* 设置超链接无下划线 */
+    text-decoration: none;
+    /* 设置超链接颜色 */
+    color: rgba(255, 0, 0, 0.705);
+}
+
+.SDSystem-Livable-Image {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: rgb(152, 221, 50);
+    display:inline-block;
+}
+
+.SDSystem-List {
+    display:inline-block;
+    size: 200px;
+}
+
+.SDSystem-All {
+    /* 盒子居中（不脱离文档流） */
+    margin: 0 auto;
+    /* 设置宽高 */
+    width: 1000px;
+    /* 设置圆角 */
+    border-radius: 35px;
+    /* 垂直居中（不脱离文档流） */
+    display: flex;
+    align-items: center;
+}
+
+#SDSystem-Livable {
+    /* 设置阴影 */
+    box-shadow: 4px 4px 10px rgba(122, 206, 26, 0.253);
+    /* 设置背景色 */
+    background-color: rgba(146, 240, 5, 0.086);
+    /* 设置圆角 */
+}
